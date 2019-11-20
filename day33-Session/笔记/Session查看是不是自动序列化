@@ -17,3 +17,11 @@ IDEA里面观察：
 3.然后我们再次启动IDEA里面的tomcat,我们会发现，你面的C:\Users\Administrator\.IntelliJIdea2019.2\system\tomcat\_basic_code_new, work目录先删除，然后再创建，创建的里面没有session.ser。所以就读不进来
 
 将来我们都是部署到tomcat服务器里面，所以这个问题不用担心
+
+			3. session默认失效时间 30分钟
+				选择性配置修改	【tomcat配置，下面的各个虚拟目录都设置为30分钟】
+				<session-config>
+			        <session-timeout>30</session-timeout>
+			    </session-config>
+
+			    我们可以新建web.xml，然后写上上面的也可以对每个虚拟项目配置过期时间
