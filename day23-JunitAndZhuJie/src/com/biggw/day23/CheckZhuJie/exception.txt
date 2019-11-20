@@ -1,0 +1,20 @@
+出现异常的函数: div
+异常的类型: ArithmeticException
+异常出现的原因: / by zero
+一共出现: 1个异常
+
+出现异常的函数: div
+异常的类型: ArithmeticException
+异常出现的原因: / by zero
+一共出现: 1个异常
+
+出现异常的函数: div
+异常的类型: ArithmeticException
+异常出现的原因: / by zero
+一共出现: 1个异常
+
+出现异常的函数: div
+异常的类型: ArithmeticException
+异常出现的原因: / by zero
+一共出现: 1个异常
+

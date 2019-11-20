@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="day30-Response_Encoding-Redirect-ServletContext:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/day30_Response_Encoding_Redirect_ServletContext_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="day30-Response_Encoding-Redirect-ServletContext/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="day30-Response_Encoding-Redirect-ServletContext" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

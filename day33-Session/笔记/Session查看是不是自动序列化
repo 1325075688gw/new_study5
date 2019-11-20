@@ -1,0 +1,19 @@
+我们这次要做的实验就是观察 Session 是不是自动序列化，和反序列化 【tomcat帮助我们做的】
+
+1.首先我想实现序列化和反序列化，我们需要使用本地tomcat，而不是IDEA
+2.启动IDEA后，我们启动tomcat，然后复制 C:\Users\Administrator\.IntelliJIdea2019.2\system\tomcat\_basic_code_new，然后进入目录 C:\Users\Administrator\.IntelliJIdea2019.2\system\tomcat\_basic_code_new\conf\Catalina\localhost
+3.查看里面文件，<Context path="/day33_Session_war_exploded" docBase="D:\code\Java\basic_code_new\out\artifacts\day33_Session_war_exploded" />然后进入文件里面所述的目录 docBase=：xxx
+4.我们进入目录，然后将所有文件，压缩，然后改为war包，然后关闭 IDEA里面的tomcat
+5.我们进入我们本地 tomcat 然后进入里面的 webapps 里面，
+6.然后访问set_session （访问方式是：/虚拟目录/xxxServlet）
+7.然后我们用bin里面的 shutdown.bat关闭tomcat，然后我们观察apache下的 work 目录，（work目录就是存放运行过程中的动态生成的数据，jsp生成的java文件，session序列化后的文件等）
+8.观察D:\code\Java\apache-tomcat-8.5.31\work\Catalina\localhost\虚拟目录的名称，会观察到生成一个session.ser文件生成
+9.当我们重新打开tomcat时候，这个文件会被加载进去进内存，同时自动消失
+
+IDEA里面，只帮助我们钝化，没有活化
+IDEA里面观察：
+1.启动IDEA后，我们启动tomcat，然后复制 C:\Users\Administrator\.IntelliJIdea2019.2\system\tomcat\_basic_code_new，进入work目录，C:\Users\Administrator\.IntelliJIdea2019.2\system\tomcat\_basic_code_new\work\Catalina\localhost\day33_Session_war_exploded
+2.我们关闭IDEA的tomcat，观察会发现，里面生成session.ser文件
+3.然后我们再次启动IDEA里面的tomcat,我们会发现，你面的C:\Users\Administrator\.IntelliJIdea2019.2\system\tomcat\_basic_code_new, work目录先删除，然后再创建，创建的里面没有session.ser。所以就读不进来
+
+将来我们都是部署到tomcat服务器里面，所以这个问题不用担心

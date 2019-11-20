@@ -1,0 +1,4 @@
+我们进入:Using CATALINA_BASE:   "C:\Users\Administrator\.IntelliJIdea2019.2\system\tomcat\_basic_code_new"
+
+然后进入:C:\Users\Administrator\.IntelliJIdea2019.2\system\tomcat\_basic_code_new\work\Catalina\localhost\day32\org\apache\jsp
+然后我们就能看见 jsp的java文件了, 然后我们查看它的父类, 它的父类就是 xxx , 然后我们去apache源码里面去查找该xxx类,发现父类继承于 HttpServlet .而 HttpServlet 继承于 Servlet

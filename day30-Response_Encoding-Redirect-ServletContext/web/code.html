@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证码</title>
+
+    <script>
+        window.onload = function () {
+            var img1 = document.getElementById("code1");
+
+            // 浏览器将没有重新访问服务器,而是直接去缓存里面取,所以图片没有后改变  【谷歌浏览器可以刷新】
+            img1.onclick = function () {
+                img1.src = "/day30/checkCodeServlet"
+            };
+
+
+
+            var img2 = document.getElementById("code3");
+            img2.onclick = function () {
+                var time = new Date().getTime();
+                // 获取时间戳(毫秒值计数)
+                // 使用 GET 请求拼接参数,欺骗浏览器,让浏览器重新发起请求
+                img2.src = "/day30/checkCodeServlet?"+time
+            };
+        }
+    </script>
+
+</head>
+<body>
+
+    <img id="code1" src="/day30/checkCodeServlet">
+    <a id="code2">点击切换图片</a>
+
+    <br>
+    <br>
+    <img id="code3" src="/day30/checkCodeServlet">
+    <a id="code4">点击切换图片</a>
+
+
+</body>
+</html>
