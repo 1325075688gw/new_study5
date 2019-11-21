@@ -49,7 +49,7 @@ import java.util.Map;
 
 
 @WebServlet("/loginServlet")
-public class LoginServlet extends HttpServlet {
+public class LoginServlet_BeanUtils extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 1.设置编码
         request.setCharacterEncoding("utf-8");
@@ -68,7 +68,7 @@ public class LoginServlet extends HttpServlet {
 
          */
 
-        // ==================================== 2.2 结束 ============================================
+        // ==================================== 2.1 结束 ============================================
 
 
         // ==================================== 2.2 开始 ============================================
