@@ -28,7 +28,9 @@
 </head>
 <body>
 
-    <form action="/day34/loginServlet" method="post">
+    <%-- 动态获取虚拟目录 --%>
+<%--    <form action="/day34/loginServlet" method="post">--%>
+    <form action="${pageContext.request.contextPath}/loginServlet" method="post"></form>
         <table>
             <tr>
                 <td>用户名:</td>
@@ -56,11 +58,19 @@
         %>
 
         <p>
+            <%--  3元表达式 --%>
             <%=login_error == null ? "" : login_error%>
         </p>
         <p>
             <%=code_error == null ? "" : code_error %>
         </p>
+
+        <%-- 我们可以用el简化代码,如果有就显示，如果为null或者，查找不到，就显示空字符串 --%>
+        ${requestScope.login_error}
+        ${requestScope.code_error}
+
+
+
     </form>
 
 </body>
