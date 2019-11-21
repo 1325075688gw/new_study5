@@ -34,6 +34,8 @@
       <module fileurl="file://$PROJECT_DIR$/day31-Cookie/day31-Cookie.iml" filepath="$PROJECT_DIR$/day31-Cookie/day31-Cookie.iml" />
       <module fileurl="file://$PROJECT_DIR$/day32-JSP/day32-JSP.iml" filepath="$PROJECT_DIR$/day32-JSP/day32-JSP.iml" />
       <module fileurl="file://$PROJECT_DIR$/day33-Session/day33-Session.iml" filepath="$PROJECT_DIR$/day33-Session/day33-Session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day34-Login-Practice/day34-Login-Practice.iml" filepath="$PROJECT_DIR$/day34-Login-Practice/day34-Login-Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day35-JSP-JSTL-MVC-EL/day35-JSP-JSTL-MVC-EL.iml" filepath="$PROJECT_DIR$/day35-JSP-JSTL-MVC-EL/day35-JSP-JSTL-MVC-EL.iml" />
     </modules>
   </component>
 </project>
