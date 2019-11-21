@@ -24,4 +24,6 @@ IDEA里面观察：
 			        <session-timeout>30</session-timeout>
 			    </session-config>
 
-			    我们可以新建web.xml，然后写上上面的也可以对每个虚拟项目配置过期时间
+
+
+			    我们可以在新建tmcat时候,选择加上web.xml，然后写上上面的配置文件,这样就可以对每个虚拟项目配置过期时间
