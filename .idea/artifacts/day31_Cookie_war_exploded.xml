@@ -4,10 +4,10 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="day31-Cookie" />
+          <element id="module-output" name="day31-Cookie-And-URL-Encoding" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="day31-Cookie/web/Web" />
+      <element id="javaee-facet-resources" facet="day31-Cookie-And-URL-Encoding/web/Web" />
     </root>
   </artifact>
 </component>
