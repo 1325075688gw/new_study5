@@ -33,6 +33,7 @@ public class Demo08RequestShareData extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         request.setAttribute("name","小强");
+        // 转发
         request.getRequestDispatcher("/demo03RequestUserAgent").forward(request,response);
     }
 
