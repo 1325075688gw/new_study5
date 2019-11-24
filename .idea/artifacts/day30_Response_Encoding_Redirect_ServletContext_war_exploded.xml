@@ -5,7 +5,7 @@
       <element id="javaee-facet-resources" facet="day30-Response_Encoding-Redirect-ServletContext/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="day30-Response_Encoding-Redirect-ServletContext" />
+          <element id="module-output" name="day30-Response_Encoding-Redirect-ServletContext-FilePath_getRealPath" />
         </element>
       </element>
     </root>
