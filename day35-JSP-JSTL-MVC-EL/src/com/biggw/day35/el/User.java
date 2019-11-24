@@ -8,8 +8,8 @@ import java.util.Date;
  * @date 2019/11/21 0021 下午 22:44
  */
 public class User {
-    private int age;
     private String name;
+    private int age;
     private Date birthday;
 
 
@@ -45,9 +45,9 @@ public class User {
     public User() {
     }
 
-    public User(int age, String name, Date date) {
-        this.age = age;
+    public User(String name, int age, Date date) {
         this.name = name;
+        this.age = age;
         this.birthday = date;
     }
 

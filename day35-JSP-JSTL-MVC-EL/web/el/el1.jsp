@@ -37,8 +37,8 @@
     request.setAttribute("list",list);
 
 %>
-    ${not empty str}
+    ${not empty str}      <%-- false --%>
 
-    ${not empty list}
+    ${not empty list}     <%-- false --%>
 </body>
 </html>
