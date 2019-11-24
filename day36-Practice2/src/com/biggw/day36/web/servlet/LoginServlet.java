@@ -50,7 +50,14 @@ public class LoginServlet extends HttpServlet {
         if(loginUser != null){
             // 登陆成功将用户信息存到session中
             session.setAttribute("user",loginUser);
-            response.sendRedirect(request.getContextPath()+"/index.jsp");
+            // 判断请求是不是从过滤器来的，如果是，跳转会过滤器请求页面
+            String uri = (String)session.getAttribute("URI");
+            if(uri!=null || "".equals(uri)){
+                response.sendRedirect(uri);
+            }
+            else {
+                response.sendRedirect(request.getContextPath() + "/index.jsp");
+            }
         }else{
             request.setAttribute("login_msg","用户名或密码错误！");
             request.getRequestDispatcher("/login.jsp").forward(request,response);
