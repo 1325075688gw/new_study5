@@ -48,6 +48,7 @@ public class LoginServlet extends HttpServlet {
         UserServiceImpl userService = new UserServiceImpl();
         User loginUser = userService.login(user);  // loginUser,中保存了很多用户信息，我们将此对象存入到 session 中
         if(loginUser != null){
+            // 登陆成功将用户信息存到session中
             session.setAttribute("user",loginUser);
             response.sendRedirect(request.getContextPath()+"/index.jsp");
         }else{
