@@ -3,6 +3,7 @@ package com.biggw.day25.Template;
 import com.biggw.day25.utils.JdbcDruidUtils;
 import javafx.beans.property.adapter.JavaBeanObjectProperty;
 import org.junit.Test;
+import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -30,9 +31,9 @@ import java.util.Map;
 		* update():执行DML语句。增、删、改语句
 		* queryForMap():查询结果将结果集封装为map集合，将列名作为key，将值作为value 将这条记录封装为一个map集合
 			* 注意：【这个方法查询的结果集长度只能是1】
-		* queryForList():查询结果将结果集封装为list集合
+		* queryForList():查询结果将结果集封装为list集合                                                    【 一次性可以查询多条记录 】
 			* 注意：将每一条记录封装为一个Map集合，再将Map集合装载到List集合中
-		* query():查询结果，将结果封装为JavaBean对象
+		* query():查询结果，将结果封装为JavaBean对象                                                       【 一次性可以查询多条记录（更推荐） 】
 			* query的参数：RowMapper
 				* 一般我们使用BeanPropertyRowMapper实现类。可以完成数据到JavaBean的自动封装
 				* new BeanPropertyRowMapper<类型>(类型.class)
@@ -170,7 +171,7 @@ public class Demo02JdbcTemplatePerson {
             System.out.println(person);
         }
 
-        // 这种是封装一个对象，好奇怪，验证登陆用（只能查询一个用户？）
+        // 这种是封装一个对象，好奇怪，验证登陆用（只能查询一个用户？）             【 错了，一个和多个都可以查询 】
         Person person = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<Person>(Person.class));
         System.out.println("person = " + person);
 
@@ -198,6 +199,25 @@ public class Demo02JdbcTemplatePerson {
         // jdbcTemplate.queryForObject(sql, 包装或者引用类型的.class);
         Long count = jdbcTemplate.queryForObject(sql, Long.class);
         System.out.println("count = " + count);
+    }
+
+    /**
+     * 查询单条记录更推荐 queryForObject
+     */
+    public void test8(){
+                String sql = "select * from User where username = ? and password = ?";
+/*            List<User> query = jdbcTemplate.query(sql, new BeanPropertyRowMapper<User>(User.class),
+                     user.getUsername(),
+                    user.getPassword());
+            return query.get(0);*/
+
+
+        Person user= jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<Person>(Person.class),
+                "小亲爱那个",
+                "123456");
+        System.out.println("user = " + user);
+
+
     }
 
 }
