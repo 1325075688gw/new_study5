@@ -38,6 +38,7 @@
       <module fileurl="file://$PROJECT_DIR$/day35-JSP-JSTL-MVC-EL/day35-JSP-JSTL-MVC-EL.iml" filepath="$PROJECT_DIR$/day35-JSP-JSTL-MVC-EL/day35-JSP-JSTL-MVC-EL.iml" />
       <module fileurl="file://$PROJECT_DIR$/day36-Practice2/day36-Practice2.iml" filepath="$PROJECT_DIR$/day36-Practice2/day36-Practice2.iml" />
       <module fileurl="file://$PROJECT_DIR$/day37-Filter-WebXml/day37-Filter-WebXml.iml" filepath="$PROJECT_DIR$/day37-Filter-WebXml/day37-Filter-WebXml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day38-Proxy/day38-Proxy.iml" filepath="$PROJECT_DIR$/day38-Proxy/day38-Proxy.iml" />
     </modules>
   </component>
 </project>
