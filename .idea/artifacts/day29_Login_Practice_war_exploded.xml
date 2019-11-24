@@ -5,7 +5,7 @@
       <element id="javaee-facet-resources" facet="day29-Login-Practice/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="day29-Login-Practice" />
+          <element id="module-output" name="day29-Login-Practice-BeanUtils" />
         </element>
       </element>
     </root>

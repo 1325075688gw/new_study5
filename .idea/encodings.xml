@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/day29-Login-Practice/需求.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/day29-Login-Practice-BeanUtils/需求.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/day30-Response_Encoding-Redirect-ServletContext/笔记/需求.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/day34-Login-Practice/案例需求.txt" charset="GBK" />
   </component>
