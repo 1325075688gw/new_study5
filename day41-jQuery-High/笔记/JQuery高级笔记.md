@@ -37,8 +37,20 @@
 
 	2. 遍历
 		1. js的遍历方式
-			* for(初始化值;循环结束条件;步长)
-			* 普通for循环，我们仍然可以使用break，continue
+			1.* for(初始化值;循环结束条件;步长)
+			  * 普通for循环，我们仍然可以使用break，continue
+			
+			2. for(var key in o ){  // o可以是键值对，也可以是数组，如果o是键值对，那么key就是键；如果是数组，那么就是数组的索引
+			        alert(key)
+			    }
+			    
+			   var person = {"name": "张三", age: 23, 'gender': true}; 
+               //for in 循环
+               for(var key in person){
+                    //这样的方式获取不行。因为相当于  person."name"，我们知道通过点获取，则不需要加引号，只有通过中括号，才需要加引号
+                    //alert(key + ":" + person.key);
+                    alert(key+":"+person[key]);
+                }
 		2. jq的遍历方式
 			1. jq对象.each(callback)
 				1. 语法：
