@@ -18,6 +18,7 @@ public class Demo02Druid {
         ClassLoader classLoader = Demo02Druid.class.getClassLoader();
 
         // 方法一（不推荐）
+        // todo getResource()和getResourceAsStream()使用方法对比
         // getResource()这个获取的是资源的文件(File),我们还需要将提取出,file的路径然后,自己加载资源
         /**
         URL resource = classLoader.getResource("druid.properties");
