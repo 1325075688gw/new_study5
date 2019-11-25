@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="day43-Redis:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/day43_Redis_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="day43-Redis/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="day43-Redis" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
