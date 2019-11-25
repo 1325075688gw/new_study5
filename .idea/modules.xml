@@ -40,6 +40,7 @@
       <module fileurl="file://$PROJECT_DIR$/day37-Filter-WebXml/day37-Filter-WebXml.iml" filepath="$PROJECT_DIR$/day37-Filter-WebXml/day37-Filter-WebXml.iml" />
       <module fileurl="file://$PROJECT_DIR$/day38-Proxy/day38-Proxy.iml" filepath="$PROJECT_DIR$/day38-Proxy/day38-Proxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/day39-Listener/day39-Listener.iml" filepath="$PROJECT_DIR$/day39-Listener/day39-Listener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day40-jQuery-Basic/day40-jQuery-Basic.iml" filepath="$PROJECT_DIR$/day40-jQuery-Basic/day40-jQuery-Basic.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo06-jQuery事件绑定</title>
+    <script  src="src/com/biggw/day40/js/jquery-3.3.1.min.js"></script>
+
+    <!-- 但是我们如果将<script>写在这儿,就必须等待DOM文档树建立好后再对标签进行操作 -->
+    <script>
+        // js方式
+        window.onload = function (ev) {
+            document.getElementById("div2").onclick = function (ev1) {
+                // this是js对象
+                alert(this);
+                $(document.getElementById("div2")).css("backgroundColor","yellow");
+            }
+        };
+
+
+        // jQuery方式
+        $(function () {
+            $("#div3").click(function () {
+                // this是js对象,而不是jQuery对象
+                alert(this);
+                alert($(this));
+                // jQuery设置css样式方法,可以将第二个单词及之后单词的首字母大写,这样,我们按住Ctrl,然后鼠标移上去,如果有提示,就说明我们没有写错,比下面这种方法好用
+                $(this).css("background-color","red");
+            })
+        });
+
+        // =============================================================================================================
+        /*
+         window.onload = function(){} 和 $(function(){}) 区别 :这两个都叫做入口函数
+             * window.onload 只能定义一次,如果定义多次，后边的会将前边的覆盖掉
+             * $(function)可以定义多次的。
+        */
+
+
+        // =============================================================================================================
+        /* function fun1(){
+             alert("abc");
+         }
+
+         function fun2(){
+             alert("bcd");
+         }
+         window.onload = fun1;
+         //window.onload = fun2;
+        */
+
+
+
+        // =============================================================================================================
+        /*
+        $(function(){
+             alert(123);
+         });
+
+         $(function(){
+             alert(234);
+         });
+        */
+
+    </script>
+
+
+</head>
+<body>
+
+    <div id="div1">div1...</div>
+    <div id="div2">div_js...</div>
+    <div id="div3">div_jQuery...</div>
+    <input type="button" value="点我" id="button1">
+
+
+
+<script>
+    // 我们html文档的执行是从上到下的顺序解释执行的,所以,我们将<script>写在标签下面,一定能正确执行
+    $("#div1").css("backgroundColor","blue");
+
+</script>
+
+</body>
+</html>

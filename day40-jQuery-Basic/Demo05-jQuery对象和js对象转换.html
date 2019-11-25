@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo05-jQuery对象和js对象转换</title>
+    <script  src="src/com/biggw/day40/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+
+    <div>这是第一个</div>
+    <div>这是第二个div</div>
+    <p>这是第三个div</p>
+    <p>这是第四个div</p>
+
+    <h5>这是第五个</h5>
+    <h5>这是第六个</h5>
+
+
+
+<script>
+
+    // 1.通过js方式获取标签名为div的所有html元素对象
+    var divs = document.getElementsByTagName("div");
+    alert(divs.length);
+    // 2.将divs中的所有div，内容都变为"<a> href='https://www.baidu.com'>百度一下</a>"
+    for (var i = 0; i < divs.length; i++) {
+        if (i%2 === 0){
+            divs[i].innerHTML = "<a href='https://www.baidu.com'>百度一下</a>";
+        }else {
+            // divs[i].innerText = "<a href='https://www.baidu.com'>百度一下</a>";
+
+            // 转化为jQuery对象使用
+            $(divs[i]).text("<a href='https://www.baidu.com'>百度一下</a>");
+        }
+    }
+
+
+    var $ps = $("p");
+    alert($ps.length);
+    for (var i = 0; i < $ps.length; i++) {
+        // jQuery对象转为js对象使用
+        if (i%2===0) {
+            alert($ps);
+            alert($ps[0]);   // $ps[0] :js对象
+            alert($($ps[0]));  // $($ps[0]:jQuery对象
+            $($ps[i]).html("<a href='https://www.baidu.com'>百度一下</a>");
+        }else{
+            $ps[i].innerText = "<a href='https://www.baidu.com'>百度一下</a>";
+        }
+    }
+
+    // 3.通过jQuery方式获取标签名为div的所有html元素对象
+    var $h5s = $("h5");
+    alert($h5s.length);
+
+    // 4.jQuery一次性设置数组对象
+    $h5s.html("<a href='https://www.baidu.com'>百度一下</a>");
+
+
+    /*
+    1. JQuery对象在操作时，更加方便。
+    2. JQuery对象和js对象方法不通用的.
+    3. 两者相互转换
+        * jq -- > js : jq对象[索引] 或者 jq对象.get(索引)
+        * js -- > jq : $(js对象)
+    */
+
+
+    /*
+
+    js获取用innerHTML,设置用等号=
+
+    js 获取html：console.log(div.innerHTML);
+    js 设置html：div.innerHTML = xxx;
+    js 获取text：console.log(div.innerText);
+    js 获取text：div.innerText = xxx;
+
+
+
+    jQuery获取用html(),设置用html("xxx");
+    jQuery 获取html：console.log(div.html());
+    jQuery 设置html：div.html(xxx);
+    jQuery 获取html：console.log(div.text());
+    jQuery 设置html：div.text(xxx);
+
+
+     */
+
+
+
+
+
+</script>
+
+</body>
+</html>

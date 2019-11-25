@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo04-jQuery写模式</title>
+    <script  src="src/com/biggw/day40/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<div>
+    <br>
+    <div>这是一个</div>
+</div>
+
+
+<div>
+    <br>
+    <div>这是第二个div</div>
+</div>
+
+
+
+<script>
+    var first$divElement = $("div")[0].getElementsByTagName("div");
+    var second$divElement = $("div")[1].getElementsByTagName("div");
+    first$divElement.innerHTML="<a> href='https://www.baidu.com'>百度一下</a>";
+    second$divElement.innerText="<a> href='https://www.baidu.com'>百度一下2</a>";
+</script>
+
+</body>
+</html>

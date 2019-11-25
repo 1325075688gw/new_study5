@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo03-jQuery读模式</title>
+    <script  src="src/com/biggw/day40/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<div>
+    <br>
+    这是一个div标签
+    <br>
+    <div>这又是一个div标签</div>
+    <br>
+</div>
+<script>
+    // 读模式
+    var first$divElement = $("div")[0].getElementsByTagName("div");
+    console.log(first$divElement.innerHTML);
+    console.log(first$divElement.innerText);
+
+</script>
+</body>
+</html>
