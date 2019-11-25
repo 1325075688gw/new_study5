@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-jQuery实现方式1_ajax</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script>
+        function func() {
+            // 使用ajax发送异步请求
+
+            $.ajax({
+                url:"/day42/aJAXServlet",
+                type:"POST",
+                data:{"username":"jack","age":12},
+                success:function (data) {
+                    alert(data);
+                },
+                error:function () {
+                    alert("出错了")
+                },
+                dataType:"text"  // 最后一个不建议写逗号，设置预期（期望服务器）返回的数据类型，如果不指定，则jQuery根据html的包的mime类型，自动判断
+                // 然后按照期望的格式进行解析，所以如果我们服务器传回的是json数据，我们就必须制定dataType："json"，否则浏览器按照默认的格式去解析我们返回的数据
+                // 就会出错
+            })
+        }
+
+    </script>
+
+</head>
+<body>
+
+<input type="button" value="点我" onclick="func();">
+<input type="text">
+
+</body>
+</html>
