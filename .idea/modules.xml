@@ -17,11 +17,11 @@
       <module fileurl="file://$PROJECT_DIR$/day16-HanShu/day16-HanShu.iml" filepath="$PROJECT_DIR$/day16-HanShu/day16-HanShu.iml" />
       <module fileurl="file://$PROJECT_DIR$/day17-File/day17-File.iml" filepath="$PROJECT_DIR$/day17-File/day17-File.iml" />
       <module fileurl="file://$PROJECT_DIR$/day18-InputStream/day18-InputStream.iml" filepath="$PROJECT_DIR$/day18-InputStream/day18-InputStream.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day19-Buffered/day19-Buffered.iml" filepath="$PROJECT_DIR$/day19-Buffered/day19-Buffered.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day19-Buffered-Serializable/day19-Buffered.iml" filepath="$PROJECT_DIR$/day19-Buffered-Serializable/day19-Buffered.iml" />
       <module fileurl="file://$PROJECT_DIR$/day20-Net/day20-Net.iml" filepath="$PROJECT_DIR$/day20-Net/day20-Net.iml" />
       <module fileurl="file://$PROJECT_DIR$/day21-FunctionaliInterface/day21-FunctionaliInterface.iml" filepath="$PROJECT_DIR$/day21-FunctionaliInterface/day21-FunctionaliInterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/day22-CollectionStream/day22-CollectionStream.iml" filepath="$PROJECT_DIR$/day22-CollectionStream/day22-CollectionStream.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day23-JunitAndZhuJie/day23-JunitAndZhuJie.iml" filepath="$PROJECT_DIR$/day23-JunitAndZhuJie/day23-JunitAndZhuJie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day23-JunitTest-ZhuJie/day23-JunitTest-ZhuJie.iml" filepath="$PROJECT_DIR$/day23-JunitTest-ZhuJie/day23-JunitTest-ZhuJie.iml" />
       <module fileurl="file://$PROJECT_DIR$/day24-JDBC/day24-JDBC.iml" filepath="$PROJECT_DIR$/day24-JDBC/day24-JDBC.iml" />
       <module fileurl="file://$PROJECT_DIR$/day25-JDBCPool/day25-JDBCPool.iml" filepath="$PROJECT_DIR$/day25-JDBCPool/day25-JDBCPool.iml" />
       <module fileurl="file://$PROJECT_DIR$/day26-XML/day26-XML.iml" filepath="$PROJECT_DIR$/day26-XML/day26-XML.iml" />
@@ -42,6 +42,7 @@
       <module fileurl="file://$PROJECT_DIR$/day39-Listener/day39-Listener.iml" filepath="$PROJECT_DIR$/day39-Listener/day39-Listener.iml" />
       <module fileurl="file://$PROJECT_DIR$/day40-jQuery-Basic/day40-jQuery-Basic.iml" filepath="$PROJECT_DIR$/day40-jQuery-Basic/day40-jQuery-Basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/day41-jQuery-High/day41-jQuery-High.iml" filepath="$PROJECT_DIR$/day41-jQuery-High/day41-jQuery-High.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day42-AJAX-JSON/day42-AJAX-JSON.iml" filepath="$PROJECT_DIR$/day42-AJAX-JSON/day42-AJAX-JSON.iml" />
     </modules>
   </component>
 </project>
