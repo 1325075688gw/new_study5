@@ -83,7 +83,7 @@
 				* 语法：$.get(url, [data], [callback], [type])
 					* 参数：
 						* url：请求路径
-						* data：请求参数
+						* data：请求参数     【 {username:"rose"} 】  如果不发送参数，就写{}
 						* callback：回调函数
 						* type：响应结果的类型
 
