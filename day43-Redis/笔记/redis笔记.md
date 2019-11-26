@@ -110,7 +110,7 @@
 				127.0.0.1:6379> get username
 				"zhangsan"
 			3. 删除： del key
-				127.0.0.1:6379> del age
+ 				127.0.0.1:6379> del username
 				(integer) 1
 		3. 哈希类型 hash
 			1. 存储： hset key field value
@@ -147,7 +147,7 @@
 					(integer) 3
 			2. 获取：
 				* lrange key start end ：范围获取
-					127.0.0.1:6379> lrange myList 0 -1
+					127.0.0.1:6379> lrange myList 0 -1   【 获取列表中的所有元素 】
 					1) "b"
 					2) "a"
 					3) "c"
@@ -204,7 +204,13 @@
 		1. redis是一个内存数据库，当redis服务器重启，获取电脑重启，数据会丢失，我们可以将redis内存中的数据持久化保存到硬盘的文件中。
 		2. redis持久化机制：
 			1. RDB：默认方式，不需要进行配置，默认就使用这种机制
-				* 在一定的间隔时间中，检测key的变化情况，然后持久化数据
+				* 在一定的间隔时间中，检测key的变化情况，然后持久化数据 
+				【 这儿检测的是键的变化情况 】
+				    set name 1 
+				    set name 2 
+				    set name 3 
+				   【 这也算3次键的变化 】
+				    
 				1. 编辑redis.windwos.conf文件
 					#   after 900 sec (15 min) if at least 1 key changed
 					save 900 1
@@ -214,8 +220,8 @@
 					save 60 10000
 					
 				2. 重新启动redis服务器，并指定配置文件名称
-					D:\JavaWeb2018\day23_redis\资料\redis\windows-64\redis-2.8.9>redis-server.exe redis.windows.conf	
-				
+					1. D:\JavaWeb2018\day23_redis\资料\redis\windows-64\redis-2.8.9>redis-server.exe redis.windows.conf	
+				    2. 然后再启动redis-cli.exe(客户端)
 			2. AOF：日志记录的方式，可以记录每一条命令的操作。可以每一次命令操作后，持久化数据
 				1. 编辑redis.windwos.conf文件
 					appendonly no（关闭aof） --> appendonly yes （开启aof）
