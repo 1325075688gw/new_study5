@@ -43,7 +43,7 @@ public interface Demo04InterfacePrivate {
         methodPrivateStatic();
     }
 
-    void methodPrivateDefault() {
+    private void methodPrivateDefault() {
         System.out.println("我是普通私有方法,供默认方法调用");
     }
 
