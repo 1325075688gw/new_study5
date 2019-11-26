@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="day44-Redis-Practice1:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/day44_Redis_Practice1_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="day44-Redis-Practice1" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib3" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="day44-Redis-Practice1/web/Web" />
+    </root>
+  </artifact>
+</component>

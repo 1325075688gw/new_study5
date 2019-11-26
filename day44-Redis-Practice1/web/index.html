@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中国直辖市</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script>
+
+        // 入口函数
+        $(function () {
+
+            $.get("/day442/findAllProvinceServlet",{},function (data) {
+                var $province = $("#province");
+                $(data).each(function (index,element) {
+                    // this不需要加$,也就是不需要这样写，$(this).id
+                    var option = "<option id='"+this.id+"'>"+this.name+"</option>";
+                    $province.append(option);
+                })
+            },"json")
+
+
+        })
+
+    </script>
+
+
+</head>
+<body>
+
+
+<h1 style="align-content: center">中国直辖市</h1>
+
+<select id="province">
+    <option id="title">---请选择省份---</option>
+</select>
+
+
+</body>
+</html>

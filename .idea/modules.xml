@@ -44,6 +44,8 @@
       <module fileurl="file://$PROJECT_DIR$/day41-jQuery-High/day41-jQuery-High.iml" filepath="$PROJECT_DIR$/day41-jQuery-High/day41-jQuery-High.iml" />
       <module fileurl="file://$PROJECT_DIR$/day42-AJAX-JSON/day42-AJAX-JSON.iml" filepath="$PROJECT_DIR$/day42-AJAX-JSON/day42-AJAX-JSON.iml" />
       <module fileurl="file://$PROJECT_DIR$/day43-Redis/day43-Redis.iml" filepath="$PROJECT_DIR$/day43-Redis/day43-Redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day44-Redis-Practice/day44-Redis-Practice.iml" filepath="$PROJECT_DIR$/day44-Redis-Practice/day44-Redis-Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day44-Redis-Practice1/day44-Redis-Practice1.iml" filepath="$PROJECT_DIR$/day44-Redis-Practice1/day44-Redis-Practice1.iml" />
     </modules>
   </component>
 </project>
