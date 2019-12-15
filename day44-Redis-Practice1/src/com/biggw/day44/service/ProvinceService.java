@@ -14,5 +14,5 @@ public interface ProvinceService {
 
     public String findAllJson();
 
-    // 以后我们还可以在这里面提供添加省份的抽象方法，那时候，我们的实现类，每次执行添加身份后，就需要操作Redis，要么清楚数据，要么给Redis添加数据
+    // 以后我们还可以在这里面提供添加省份的抽象方法，那时候，我们每次执行添加省份的Dao方法后，就需要操作Redis，1.要么清除Redis数据，2.要么给Redis添加数据
 }

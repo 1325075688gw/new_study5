@@ -33,6 +33,7 @@ public class Demo01JDBC {
 
             people = new ArrayList<>();
             Person person=null;
+            // todo: 从下到上的封装
             while(resultSet.next()!=false){
                 int id = resultSet.getInt("id");
                 String name = resultSet.getString("name");

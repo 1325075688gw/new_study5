@@ -25,7 +25,9 @@ public class Demo02JDBC {
             // 游标向下移动一行
             // 判断是否有数据
             // 获取数据,(并循环)
-            while(resultSet.next()!=false){
+
+            // todo: 从下到上的封装
+       while(resultSet.next()!=false){
                 // 列的编号从1开始, 而不是0开始
                 int id = resultSet.getInt(1);
                 String name = resultSet.getString("name");

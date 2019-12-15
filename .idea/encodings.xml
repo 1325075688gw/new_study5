@@ -3,5 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/day18-InputStream/src/com/biggw/day18/demo01/Demo02FileInputStream.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/day18-InputStream/src/com/biggw/day18/demo02/Demo01FileWriter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/day45-maven-first-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day46-ES-Cluster" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven_first_java" charset="UTF-8" />
   </component>
 </project>

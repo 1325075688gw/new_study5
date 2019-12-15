@@ -47,7 +47,7 @@ import java.util.Map;
 
 */
 
-
+// todo 将浏览器下载的对象进行封装
 @WebServlet("/loginServlet")
 public class LoginServlet_BeanUtils extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

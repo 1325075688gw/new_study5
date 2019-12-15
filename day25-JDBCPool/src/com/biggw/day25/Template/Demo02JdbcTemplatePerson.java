@@ -160,6 +160,7 @@ public class Demo02JdbcTemplatePerson {
     /**
      * 查询所有记录,将所有记录封装为Perosn对象,然后装到List集合
      */
+    // todo 从数据库中查询，从下到上的封装
     @Test
     public void test6_3() {
         System.out.println("=============   query: 封装为List,使用BeanPropertyRowMapper   ================");

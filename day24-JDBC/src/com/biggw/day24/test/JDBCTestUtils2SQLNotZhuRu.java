@@ -12,6 +12,16 @@ import java.util.Scanner;
 
 
 /**
+ * TODO:
+ * PreparedStatement对象他的执行方法
+ *      execute:特能执行CURD中的任意一种语句。它的返回值是一个boolean类型，表示有没有结果集，如果有结果集，返回true。否则返回false
+ *      executeUpdate：它只能执行CUD语句，查询语句无法执行。会影响数据库中行数
+ *      executeQuery：它只能执行selecty语句，无法执行增删改。执行结果封装到ResultSet对象
+ *
+ *      MyBatis，每次都是执行execute，然后，判断有没有结果集，如果有xxx
+ */
+
+/**
  *
  * preparedStatement = connection.prepareStatement("select * from user where name = ? and password =?");
  * 使用？作为填充符,

@@ -6,6 +6,7 @@ package com.biggw.day38.proxy;
  */
 
 // 联想厂商，可以卖电脑
+// 被代理对象，要想实现代理模式，就必须继承接口【必须】
 public class Lenovo implements SaleComputer {
     @Override
     public String sale(String name, double money) {

@@ -1,5 +1,7 @@
 package com.biggw.day12.demo03;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @author gw
  * @date 2019/11/3 0003 下午 22:28
@@ -15,7 +17,6 @@ public class Demo05EClass {
         Test.EStaticMethod(4);
     }
 }
-
 
 /*
  * 自定义类指定泛型

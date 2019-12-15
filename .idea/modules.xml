@@ -46,6 +46,10 @@
       <module fileurl="file://$PROJECT_DIR$/day43-Redis/day43-Redis.iml" filepath="$PROJECT_DIR$/day43-Redis/day43-Redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/day44-Redis-Practice/day44-Redis-Practice.iml" filepath="$PROJECT_DIR$/day44-Redis-Practice/day44-Redis-Practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/day44-Redis-Practice1/day44-Redis-Practice1.iml" filepath="$PROJECT_DIR$/day44-Redis-Practice1/day44-Redis-Practice1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day45-maven-first-web/day45-maven-first-web.iml" filepath="$PROJECT_DIR$/day45-maven-first-web/day45-maven-first-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day46-ES-Cluster/day46-ES-Cluster.iml" filepath="$PROJECT_DIR$/day46-ES-Cluster/day46-ES-Cluster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day47-Enum/day47-Enum.iml" filepath="$PROJECT_DIR$/day47-Enum/day47-Enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day48-Thread/day48-Thread.iml" filepath="$PROJECT_DIR$/day48-Thread/day48-Thread.iml" />
     </modules>
   </component>
 </project>

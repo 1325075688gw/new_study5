@@ -11,7 +11,7 @@ import java.lang.reflect.Proxy;
 public class ProxyTest {
 
     public static void main(String[] args) {
-        Lenovo lenovo = new Lenovo();
+        final Lenovo lenovo = new Lenovo();
 
         /*
             三个参数：
@@ -21,6 +21,7 @@ public class ProxyTest {
          */
 
         // 因为返回对象是联想代理商，所以我们可以强转为联想自己
+        // 被代理对象，要想实现代理模式，就必须继承接口【必须】【刚好这儿必须转为接口类型】
         SaleComputer proxy_lenovo = (SaleComputer)Proxy.newProxyInstance(Lenovo.class.getClassLoader(), Lenovo.class.getInterfaces(), new InvocationHandler() {
         // 大小写联想都可以
         // SaleComputer proxy_lenovo = (SaleComputer)Proxy.newProxyInstance(lenovo.class.getClassLoader(), lenovo.class.getInterfaces(), new InvocationHandler() {
@@ -30,7 +31,7 @@ public class ProxyTest {
                 代理逻辑编写的方法：代理对象调用的所有方法都会触发该方法执行
                     参数：
                         1. proxy:代理对象
-                        2. method：代理对象调用的方法，被封装为的对象 【 真实对象的所有方法 】
+                        2. method：代理对象调用的方法，被封装为的对象 【 被代理对象的所有方法 】
                         3. args:代理对象调用的方法时，传递的实际参数
              */
 
@@ -49,6 +50,7 @@ public class ProxyTest {
                     // 3.修改返回值
                     return "超薄联想电脑";
                 } else {
+                    // 匿名内部类想使用外部类的变量，则外部类变量必须定义成final
                     return method.invoke(lenovo, args);
                 }
             }
