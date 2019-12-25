@@ -16,12 +16,13 @@ public class ProxyTest {
         /*
             三个参数：
                 1. 类加载器：真实对象.getClass().getClassLoader()
-                2. 接口数组：真实对象.getClass().getInterfaces()
+                2. 接口数组：真实对象.getClass().getInterfaces(),也就是原来对象的方法
                 3. 处理器：new InvocationHandler()
          */
 
         // 因为返回对象是联想代理商，所以我们可以强转为联想自己
         // 被代理对象，要想实现代理模式，就必须继承接口【必须】【刚好这儿必须转为接口类型】
+        // fixme：这儿使用 Lenovo.class.getClassLoader()，也可以使用 lenovo.class.getClassLoader()，也就说明我们在创建代理对象的时候，我们可以只创建接口类，具体方法实现不用管
         SaleComputer proxy_lenovo = (SaleComputer)Proxy.newProxyInstance(Lenovo.class.getClassLoader(), Lenovo.class.getInterfaces(), new InvocationHandler() {
         // 大小写联想都可以
         // SaleComputer proxy_lenovo = (SaleComputer)Proxy.newProxyInstance(lenovo.class.getClassLoader(), lenovo.class.getInterfaces(), new InvocationHandler() {
